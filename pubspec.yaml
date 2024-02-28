@@ -77,6 +77,14 @@ flutter:
     - assets\images\vrbo.png
     - assets\images\aii.png
     - assets\images\trip.png
+    - assets\images\food1.jpg
+    - assets\images\boat.png
+    - assets\images\earthlogo.png
+    - assets\images\humantrek.jpg
+    - assets\images\sunset.jpg
+    - assets\images\insta_logo.png
+    - assets\images\twitter_logo.png
+    - assets\images\fb_logo.png    
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

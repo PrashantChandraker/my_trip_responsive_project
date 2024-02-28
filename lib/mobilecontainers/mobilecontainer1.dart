@@ -1,11 +1,12 @@
-import 'package:flutter/cupertino.dart';
+// ignore_for_file: sized_box_for_whitespace
+
 import 'package:flutter/material.dart';
 
 import '../utils/constants.dart';
 
 class MobileContainer1 extends StatefulWidget {
-   final VoidCallback? onOpenDrawer;
-  const MobileContainer1({Key? key, this.onOpenDrawer}) : super(key: key);
+  final VoidCallback? onOpenDrawer;
+  const MobileContainer1({super.key, this.onOpenDrawer});
 
   @override
   State<MobileContainer1> createState() => _MobileContainer1State();
@@ -38,21 +39,31 @@ class _MobileContainer1State extends State<MobileContainer1> {
                         horizontal: 15, vertical: 10),
                     child: Row(
                       children: [
-                        Container(
-                          height: w! / 20,
-                          width: w! / 20,
-                          decoration: const BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage(
-                                  "assets/images/mini_logo.png",
-                                ),
-                                fit: BoxFit.fill),
-                            // color: Colors.amber,
+                        SubmenuButton(
+                          menuChildren: <Widget>[
+                            MenuItemButton(
+                              onPressed: () {},
+                              child: const Text('Login'),
+                            ),
+                            MenuItemButton(
+                              onPressed: () {},
+                              child: const Text('Sign up'),
+                            ),
+                          ],
+                          child: Container(
+                            height: w! / 20,
+                            width: w! / 20,
+                            decoration: const BoxDecoration(
+                              image: DecorationImage(
+                                  image: AssetImage(
+                                    "assets/images/mini_logo.png",
+                                  ),
+                                  fit: BoxFit.fill),
+                              // color: Colors.amber,
+                            ),
                           ),
                         ),
-                        const SizedBox(
-                          width: 5,
-                        ),
+
                         Text(
                           'GoTrip',
                           style:
@@ -65,23 +76,48 @@ class _MobileContainer1State extends State<MobileContainer1> {
 
                         IconButton(
                           onPressed: () {},
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.search,
                             color: Colors.white,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 5,
                         ),
-                        IconButton(
-                            onPressed: () {
-                              print('object');
-                              widget.onOpenDrawer?.call();
-                            },
-                            icon: Icon(
+                        // IconButton(
+                        //     onPressed: () { },
+                        //     icon: const Icon(
+                        //       Icons.menu,
+                        //       color: Colors.white,
+                        //     ),),
+
+                        SubmenuButton(
+                            menuChildren: <Widget>[
+                              MenuItemButton(
+                                onPressed: () {},
+                                child: const Text('Hotel'),
+                              ),
+                              MenuItemButton(
+                                onPressed: () {},
+                                child: const Text('Flight'),
+                              ),
+                              MenuItemButton(
+                                onPressed: () {},
+                                child: const Text('Train'),
+                              ),
+                              MenuItemButton(
+                                onPressed: () {},
+                                child: const Text('Travel'),
+                              ),
+                              MenuItemButton(
+                                onPressed: () {},
+                                child: const Text('car Rental'),
+                              ),
+                            ],
+                            child: const Icon(
                               Icons.menu,
                               color: Colors.white,
-                            ))
+                            )),
                       ],
                     ),
                   ),
@@ -178,17 +214,29 @@ class _MobileContainer1State extends State<MobileContainer1> {
             child: Row(
               children: [
                 logocontainer('assets/images/booking.png'),
-                SizedBox(width: 20,),
+                const SizedBox(
+                  width: 20,
+                ),
                 logocontainer('assets/images/expedia.png'),
-                SizedBox(width: 20,),
+                const SizedBox(
+                  width: 20,
+                ),
                 logocontainer('assets/images/hotels.png'),
-               SizedBox(width: 20,),
+                const SizedBox(
+                  width: 20,
+                ),
                 logocontainer('assets/images/vrbo.png'),
-                SizedBox(width: 20,),
+                const SizedBox(
+                  width: 20,
+                ),
                 logocontainer('assets/images/aii.png'),
-               SizedBox(width: 20,),
+                const SizedBox(
+                  width: 20,
+                ),
                 logocontainer('assets/images/trip.png'),
-               SizedBox(width: 20,),
+                const SizedBox(
+                  width: 20,
+                ),
                 logocontainer('assets/images/priceline.png'),
               ],
             ),
@@ -219,16 +267,18 @@ class _MobileContainer1State extends State<MobileContainer1> {
                 Container(
                   height: 50,
                   width: 300,
-                 // color: Colors.amber,
+                  // color: Colors.amber,
                   child: Center(
                     child: TextField(
                       textAlign: TextAlign.center,
-                      
+
                       // textAlignVertical: TextAlignVertical.top,
                       decoration: InputDecoration(
-                        focusColor: Colors.red,
+                          focusColor: Colors.red,
                           hintText: s1,
-                          hintStyle: const TextStyle(fontSize: 20,),
+                          hintStyle: const TextStyle(
+                            fontSize: 20,
+                          ),
                           border: InputBorder.none),
                     ),
                   ),
@@ -246,17 +296,36 @@ class _MobileContainer1State extends State<MobileContainer1> {
   }
 
   Widget logocontainer(String myimage) {
+    // return Container(
+    //   //1
+    //   height: 35,
+    //   width:150 ,
+
+    //   decoration: BoxDecoration(
+
+    //     // color: Colors.blue,
+    //     image: DecorationImage(image: AssetImage(myimage),
+
+    //     fit: BoxFit.contain),
+    //     // color: Colors.amber,
+    //   ),
+    // );
+
     return Container(
-      //1
       height: 35,
-      width:150 ,
-      
-      decoration: BoxDecoration(
-        // color: Colors.blue,
-        image: DecorationImage(image: AssetImage(myimage), 
-        
-        fit: BoxFit.contain),
-        // color: Colors.amber,
+      width: 150,
+      child: Card(
+        color: Colors.transparent,
+        //shadowColor: Colors.red,
+        elevation: 6,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(4),
+          child: Image.asset(
+            myimage,
+            fit: BoxFit.fill,
+          ),
+        ),
       ),
     );
   }

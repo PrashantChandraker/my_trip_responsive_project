@@ -31,14 +31,13 @@ class _Container1State extends State<Container1> {
                         "images/mytrip_background_image1.jpg",
                       ),
                       fit: BoxFit.fill),
-                  
                 ),
               ),
               Column(
                 children: [
                   Padding(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 15, vertical: 10),
                     child: Row(
                       children: [
                         Container(
@@ -173,7 +172,8 @@ class _Container1State extends State<Container1> {
                             padding: EdgeInsets.only(top: 8, left: 7),
                             child: Text(
                               'Sign up',
-                              style: TextStyle(color: Colors.black, fontSize: 10),
+                              style:
+                                  TextStyle(color: Colors.black, fontSize: 10),
                             ),
                           ),
                         )
@@ -183,12 +183,12 @@ class _Container1State extends State<Container1> {
                   const SizedBox(
                     height: 65,
                   ),
-                   Text(
+                  Text(
                     'Tailored Travel, \nCompared for You',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.white,
-                        fontSize: w!/20,
+                        fontSize: w! / 20,
                         fontWeight: FontWeight.w900,
                         height: 1),
                   ),
@@ -214,34 +214,41 @@ class _Container1State extends State<Container1> {
                           BoxDecoration(color: Colors.black54.withOpacity(0.5)),
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 5),
-                        child: Row(
-                          children: [
-                            smallcontainer(
-                              Icons.location_on_outlined,
-                              Icons.keyboard_arrow_down_rounded,
-                              'Where to go',
+                        child: Row(children: [
+                          smallcontainer(
+                            Icons.location_on_outlined,
+                            Icons.keyboard_arrow_down_rounded,
+                            'Where to go',
+                          ),
+                          const Spacer(
+                            flex: 1,
+                          ),
+                          smallcontainer(
+                            Icons.calendar_month,
+                            Icons.keyboard_arrow_down_rounded,
+                            'Check in - Check out',
+                          ),
+                          const Spacer(
+                            flex: 1,
+                          ),
+                          smallcontainer(
+                            Icons.person_2_outlined,
+                            Icons.keyboard_arrow_down_rounded,
+                            '2 Guest . 1 Room',
+                          ),
+                          const Spacer(
+                            flex: 1,
+                          ),
+                          Container(
+                            height: 43,
+                            width: 110,
+                            decoration: BoxDecoration(
+                              color: Colors.green
+                              
                             ),
-                            const Spacer(
-                              flex: 1,
-                            ),
-                            smallcontainer(
-                              Icons.calendar_month,
-                              Icons.keyboard_arrow_down_rounded,
-                              'Check in - Check out',
-                            ),
-                            const Spacer(
-                              flex: 1,
-                            ),
-                            smallcontainer(
-                              Icons.location_on_outlined,
-                              Icons.keyboard_arrow_down_rounded,
-                              'Where to go',
-                            ),
-                            const Spacer(
-                              flex: 1,
-                            ),
-                          ]
-                        ),
+                            child: Center(child: Text('Search')),
+                          )
+                        ]),
                       ),
                     ),
                   )
@@ -306,18 +313,17 @@ class _Container1State extends State<Container1> {
             children: [
               Icon(icon1),
               Container(
-                margin: const EdgeInsets.only(bottom: 15),
+                // margin: const EdgeInsets.only(bottom: 15),
                 height: 40,
                 width: 115,
-                child: Center(
-                  child: TextField(
-                    textAlign: TextAlign.center,
-                    textAlignVertical: TextAlignVertical.top,
-                    decoration: InputDecoration(
-                        hintText: s1,
-                        hintStyle: const TextStyle(fontSize: 12),
-                        border: InputBorder.none),
-                  ),
+                //color: Colors.amber,
+                child: TextField(
+                  textAlign: TextAlign.center,
+                  // textAlignVertical: TextAlignVertical.top,
+                  decoration: InputDecoration(
+                      hintText: s1,
+                      hintStyle: const TextStyle(fontSize: 12),
+                      border: InputBorder.none),
                 ),
               )
             ],
