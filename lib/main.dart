@@ -11,7 +11,10 @@ import 'containers/container4.dart';
 import 'containers/container5.dart';
 import 'mobilecontainers/MobileConatiner2.dart';
 import 'mobilecontainers/MobileContainer3.dart';
+import 'mobilecontainers/MobileContainer5.dart';
+import 'mobilecontainers/MobileContainer6.dart';
 import 'mobilecontainers/mobilecontainer1.dart';
+import 'mobilecontainers/mobilecontainer4.dart';
 import 'utils/constants.dart';
 
 void main() {
@@ -84,6 +87,10 @@ class _MyHomepageState extends State<MyHomepage> {
                   MobileContainer1(),
                   MobileContainer2(),
                   MobileContainer3(),
+                  MobileContainer4(),
+                  MobileContainer5(),
+                  MobileContainer6(),
+
                 ],
               ),
             ),

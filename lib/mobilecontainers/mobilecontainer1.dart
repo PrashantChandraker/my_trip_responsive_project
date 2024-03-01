@@ -17,6 +17,7 @@ class _MobileContainer1State extends State<MobileContainer1> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.black,
+      
       child: Column(
         children: [
           Stack(
@@ -35,8 +36,8 @@ class _MobileContainer1State extends State<MobileContainer1> {
               Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 15, vertical: 10),
+                    padding: const EdgeInsets.only(
+                         top: 20),
                     child: Row(
                       children: [
                         SubmenuButton(
@@ -122,7 +123,7 @@ class _MobileContainer1State extends State<MobileContainer1> {
                     ),
                   ),
                   const SizedBox(
-                    height: 25,
+                    height: 3,
                   ),
                   Text(
                     'Tailored Travel, \nCompared for You',
@@ -207,7 +208,7 @@ class _MobileContainer1State extends State<MobileContainer1> {
             ],
           ),
           const SizedBox(
-            height: 60,
+            height: 15,
           ),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
@@ -242,7 +243,7 @@ class _MobileContainer1State extends State<MobileContainer1> {
             ),
           ),
           const SizedBox(
-            height: 80,
+            height: 20,
           ),
           // Text('data')
         ],
@@ -316,7 +317,7 @@ class _MobileContainer1State extends State<MobileContainer1> {
       width: 150,
       child: Card(
         color: Colors.transparent,
-        //shadowColor: Colors.red,
+        // shadowColor: Colors.black,
         elevation: 6,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
         child: ClipRRect(

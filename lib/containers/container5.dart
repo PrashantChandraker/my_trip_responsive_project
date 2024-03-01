@@ -1,4 +1,4 @@
-// ignore_for_file: sized_box_for_whitespace
+// ignore_for_file: sized_box_for_whitespace, unnecessary_import
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -56,7 +56,7 @@ class _Container5State extends State<Container5> {
                           height: w! / 40,
                           decoration: const BoxDecoration(
                               image: DecorationImage(
-                                  image: AssetImage('images/earthlogo.png'))),
+                                  image: AssetImage('assets/images/earthlogo.png'))),
                         ),
                         SizedBox(
                           height: w! / 70,
@@ -175,7 +175,7 @@ class _Container5State extends State<Container5> {
                   Container(
                      height: w! / 2.5,
                     width: w! / 1.95,
-                    child: Center(child: Text('Beyond acommodation, creating \nmemories of a lifetime',
+                    child: const Center(child: Text('Beyond acommodation, creating \nmemories of a lifetime',
                     style: TextStyle(color: Colors.white),))),
             ],
           )

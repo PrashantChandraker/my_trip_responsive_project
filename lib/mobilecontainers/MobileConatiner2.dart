@@ -13,115 +13,118 @@ class _MobileContainer2State extends State<MobileContainer2> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 600,
+      height: 550,
       width: double.infinity,
       decoration: const BoxDecoration(color: Colors.black),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          Text(
-            'Top-Rated Places Worldwide',
-            style: TextStyle(color: Colors.white, fontSize: w! / 15),
-          ),
-
-          Text(
-            'Explore Trendsetting Villas Across the Globe \nfor Unforgettable Escapes',
-            style: TextStyle(color: Colors.grey, fontSize: w! / 22),
-          ),
-          const SizedBox(
-            height: 10,
-          ),
-          //
-          const SizedBox(
-            height: 20,
-          ),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
+      child: Padding(
+        padding: const EdgeInsets.only(top: 5),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Text(
+              'Top-Rated Places Worldwide',
+              style: TextStyle(color: Colors.white, fontSize: w! / 15),
+            ),
+        
+            Text(
+              'Explore Trendsetting Villas Across the Globe \nfor Unforgettable Escapes',
+              style: TextStyle(color: Colors.grey, fontSize: w! / 22),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            //
+            const SizedBox(
+              height: 20,
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  placesContainer(
+                    'assets/images/vilaa1.jpg',
+                    'Serenity Cove Retreat',
+                    'Jakarta',
+                    '4.8 (3 465 reviews)',
+                    "180",
+                    "250/day",
+                    'Including all taxes & fees',
+                    Icons.location_on_outlined,
+                    Icons.star_border_purple500_outlined,
+                    Icons.attach_money_outlined,
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  placesContainer(
+                    'assets/images/vila2.jpg',
+                    'Azure Paradise Estate',
+                    'Los Angeles',
+                    '4.8 (3 454 reviews)',
+                    "240",
+                    "320/day",
+                    'Including all taxes & fees',
+                    Icons.location_on_outlined,
+                    Icons.star_border_purple500_outlined,
+                    Icons.attach_money_outlined,
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  placesContainer(
+                    'assets/images/vila3.jpg',
+                    'Whispering Palms Paradise',
+                    'Bali',
+                    '4.7 (345 reviews)',
+                    "420",
+                    "500/day",
+                    'Including all taxes & fees',
+                    Icons.location_on_outlined,
+                    Icons.star_border_purple500_outlined,
+                    Icons.attach_money_outlined,
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  placesContainer(
+                    'assets/images/vila4.jpg',
+                    'Tropical Dream Haven',
+                    'Krabi',
+                    '4.9 (1 776 reviews)',
+                    "500",
+                    "650/day",
+                    'Including all taxes & fees',
+                    Icons.location_on_outlined,
+                    Icons.star_border_purple500_outlined,
+                    Icons.attach_money_outlined,
+                  ),
+                ],
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                placesContainer(
-                  'assets/images/vilaa1.jpg',
-                  'Serenity Cove Retreat',
-                  'Jakarta',
-                  '4.8 (3 465 reviews)',
-                  "180",
-                  "250/day",
-                  'Including all taxes & fees',
-                  Icons.location_on_outlined,
-                  Icons.star_border_purple500_outlined,
-                  Icons.attach_money_outlined,
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                placesContainer(
-                  'assets/images/vila2.jpg',
-                  'Azure Paradise Estate',
-                  'Los Angeles',
-                  '4.8 (3 454 reviews)',
-                  "240",
-                  "320/day",
-                  'Including all taxes & fees',
-                  Icons.location_on_outlined,
-                  Icons.star_border_purple500_outlined,
-                  Icons.attach_money_outlined,
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                placesContainer(
-                  'assets/images/vila3.jpg',
-                  'Whispering Palms Paradise',
-                  'Bali',
-                  '4.7 (345 reviews)',
-                  "420",
-                  "500/day",
-                  'Including all taxes & fees',
-                  Icons.location_on_outlined,
-                  Icons.star_border_purple500_outlined,
-                  Icons.attach_money_outlined,
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-                placesContainer(
-                  'assets/images/vila4.jpg',
-                  'Tropical Dream Haven',
-                  'Krabi',
-                  '4.9 (1 776 reviews)',
-                  "500",
-                  "650/day",
-                  'Including all taxes & fees',
-                  Icons.location_on_outlined,
-                  Icons.star_border_purple500_outlined,
-                  Icons.attach_money_outlined,
+                Container(
+                  height: 40,
+                  width: 130,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black54),
+                    borderRadius: BorderRadius.circular(2),
+                  ),
+                  //color: Colors.grey.withOpacity(0.5)),
+                  child: Center(
+                      child: TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            'See all',
+                            style: TextStyle(fontSize: 18, color: Colors.white),
+                          ))),
                 ),
               ],
             ),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                height: 40,
-                width: 130,
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.black54),
-                  borderRadius: BorderRadius.circular(2),
-                ),
-                //color: Colors.grey.withOpacity(0.5)),
-                child: Center(
-                    child: TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          'See all',
-                          style: TextStyle(fontSize: 18, color: Colors.white),
-                        ))),
-              ),
-            ],
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

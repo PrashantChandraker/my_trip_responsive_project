@@ -14,7 +14,7 @@ class _MobileContainer3State extends State<MobileContainer3> {
   Widget build(BuildContext context) {
    return Container(
       
-      height: 500,
+      height: 340,
       width: double.infinity,
        color: Colors.black,
       child: Column(
