@@ -28,7 +28,7 @@ class _Container1State extends State<Container1> {
                 decoration: const BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage(
-                        "images/mytrip_background_image1.jpg",
+                        'assets/images/mytrip_background_image1.jpg',
                       ),
                       fit: BoxFit.fill),
                 ),
@@ -46,7 +46,7 @@ class _Container1State extends State<Container1> {
                           decoration: const BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage(
-                                  "images/mini_logo.png",
+                                  'assets/images/mini_logo.png',
                                 ),
                                 fit: BoxFit.fill),
                             // color: Colors.amber,
@@ -263,31 +263,31 @@ class _Container1State extends State<Container1> {
             margin: EdgeInsets.symmetric(horizontal: w! / 10),
             child: Row(
               children: [
-                logocontainer('images/booking.png'),
+                logocontainer('assets/images/booking.png'),
                 const Spacer(
                   flex: 1,
                 ),
-                logocontainer('images/expedia.png'),
+                logocontainer('assets/images/expedia.png'),
                 const Spacer(
                   flex: 1,
                 ),
-                logocontainer('images/hotels.png'),
+                logocontainer('assets/images/hotels.png'),
                 const Spacer(
                   flex: 1,
                 ),
-                logocontainer('images/vrbo.png'),
+                logocontainer('assets/images/vrbo.png'),
                 const Spacer(
                   flex: 1,
                 ),
-                logocontainer('images/aii.png'),
+                logocontainer('assets/images/aii.png'),
                 const Spacer(
                   flex: 1,
                 ),
-                logocontainer('images/trip.png'),
+                logocontainer('assets/images/trip.png'),
                 const Spacer(
                   flex: 1,
                 ),
-                logocontainer('images/priceline.png'),
+                logocontainer('assets/images/priceline.png'),
               ],
             ),
           ),
