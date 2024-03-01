@@ -15,30 +15,28 @@ class MobileContainer1 extends StatefulWidget {
 class _MobileContainer1State extends State<MobileContainer1> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.black,
-      
-      child: Column(
-        children: [
-          Stack(
-            children: [
-              Container(
-                height: 500,
-                width: double.infinity,
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage(
-                        "assets/images/mytrip_background_image1.jpg",
-                      ),
-                      fit: BoxFit.fill),
+    return SafeArea(
+      child: Container(
+        color: Colors.black,
+        
+        child: Column(
+          children: [
+            Stack(
+              children: [
+                Container(
+                  height: 500,
+                  width: double.infinity,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage(
+                          "assets/images/mytrip_background_image1.jpg",
+                        ),
+                        fit: BoxFit.fill),
+                  ),
                 ),
-              ),
-              Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(
-                         top: 20),
-                    child: Row(
+                Column(
+                  children: [
+                    Row(
                       children: [
                         SubmenuButton(
                           menuChildren: <Widget>[
@@ -64,7 +62,7 @@ class _MobileContainer1State extends State<MobileContainer1> {
                             ),
                           ),
                         ),
-
+                          
                         Text(
                           'GoTrip',
                           style:
@@ -74,7 +72,7 @@ class _MobileContainer1State extends State<MobileContainer1> {
                         const Spacer(
                           flex: 1,
                         ),
-
+                          
                         IconButton(
                           onPressed: () {},
                           icon: const Icon(
@@ -91,7 +89,7 @@ class _MobileContainer1State extends State<MobileContainer1> {
                         //       Icons.menu,
                         //       color: Colors.white,
                         //     ),),
-
+                          
                         SubmenuButton(
                             menuChildren: <Widget>[
                               MenuItemButton(
@@ -121,132 +119,132 @@ class _MobileContainer1State extends State<MobileContainer1> {
                             )),
                       ],
                     ),
-                  ),
-                  const SizedBox(
-                    height: 3,
-                  ),
-                  Text(
-                    'Tailored Travel, \nCompared for You',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: w! / 10,
-                        fontWeight: FontWeight.w900,
-                        height: 1),
-                  ),
-                  const SizedBox(
-                    height: 25,
-                  ),
-                  const Text(
-                    'Instantly find the best deals on flights, hotels, and vacation packages. \nStart planning your dream getaway today!',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white,
+                    const SizedBox(
+                      height: 3,
                     ),
-                  ),
-                  const SizedBox(
-                    height: 30,
-                  ),
-                  Container(
-                    height: 280,
-                    width: 400,
-                    decoration:
-                        BoxDecoration(color: Colors.black54.withOpacity(0.5)),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 5),
-                      child: Column(
-                        children: [
-                          const Spacer(
-                            flex: 1,
-                          ),
-                          smallcontainer(
-                            Icons.location_on_outlined,
-                            Icons.keyboard_arrow_down_rounded,
-                            'Where to go',
-                          ),
-                          const Spacer(
-                            flex: 1,
-                          ),
-                          smallcontainer(
-                            Icons.calendar_month,
-                            Icons.keyboard_arrow_down_rounded,
-                            'Check in - Check out',
-                          ),
-                          const Spacer(
-                            flex: 1,
-                          ),
-                          smallcontainer(
-                            Icons.location_on_outlined,
-                            Icons.keyboard_arrow_down_rounded,
-                            'Where to go',
-                          ),
-                          const Spacer(
-                            flex: 1,
-                          ),
-                          Container(
-                            height: 63,
-                            width: 390,
-                            decoration: BoxDecoration(
-                                color: Colors.green,
-                                borderRadius: BorderRadius.circular(2)),
-                            child: const Center(
-                              child: Text(
-                                'SEARCH',
-                                textAlign: TextAlign.center,
-                              ),
-                            ),
-                          ),
-                          const Spacer(
-                            flex: 1,
-                          ),
-                        ],
+                    Text(
+                      'Tailored Travel, \nCompared for You',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: w! / 10,
+                          fontWeight: FontWeight.w900,
+                          height: 1),
+                    ),
+                    const SizedBox(
+                      height: 25,
+                    ),
+                    const Text(
+                      'Instantly find the best deals on flights, hotels, and vacation packages. \nStart planning your dream getaway today!',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.white,
                       ),
                     ),
-                  )
-                ],
-              )
-            ],
-          ),
-          const SizedBox(
-            height: 15,
-          ),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                logocontainer('assets/images/booking.png'),
-                const SizedBox(
-                  width: 20,
-                ),
-                logocontainer('assets/images/expedia.png'),
-                const SizedBox(
-                  width: 20,
-                ),
-                logocontainer('assets/images/hotels.png'),
-                const SizedBox(
-                  width: 20,
-                ),
-                logocontainer('assets/images/vrbo.png'),
-                const SizedBox(
-                  width: 20,
-                ),
-                logocontainer('assets/images/aii.png'),
-                const SizedBox(
-                  width: 20,
-                ),
-                logocontainer('assets/images/trip.png'),
-                const SizedBox(
-                  width: 20,
-                ),
-                logocontainer('assets/images/priceline.png'),
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      height: 280,
+                      width: 400,
+                      decoration:
+                          BoxDecoration(color: Colors.black54.withOpacity(0.5)),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 5),
+                        child: Column(
+                          children: [
+                            const Spacer(
+                              flex: 1,
+                            ),
+                            smallcontainer(
+                              Icons.location_on_outlined,
+                              Icons.keyboard_arrow_down_rounded,
+                              'Where to go',
+                            ),
+                            const Spacer(
+                              flex: 1,
+                            ),
+                            smallcontainer(
+                              Icons.calendar_month,
+                              Icons.keyboard_arrow_down_rounded,
+                              'Check in - Check out',
+                            ),
+                            const Spacer(
+                              flex: 1,
+                            ),
+                            smallcontainer(
+                              Icons.location_on_outlined,
+                              Icons.keyboard_arrow_down_rounded,
+                              'Where to go',
+                            ),
+                            const Spacer(
+                              flex: 1,
+                            ),
+                            Container(
+                              height: 63,
+                              width: 390,
+                              decoration: BoxDecoration(
+                                  color: Colors.green,
+                                  borderRadius: BorderRadius.circular(2)),
+                              child: const Center(
+                                child: Text(
+                                  'SEARCH',
+                                  textAlign: TextAlign.center,
+                                ),
+                              ),
+                            ),
+                            const Spacer(
+                              flex: 1,
+                            ),
+                          ],
+                        ),
+                      ),
+                    )
+                  ],
+                )
               ],
             ),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          // Text('data')
-        ],
+            const SizedBox(
+              height: 15,
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  logocontainer('assets/images/booking.png'),
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  logocontainer('assets/images/expedia.png'),
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  logocontainer('assets/images/hotels.png'),
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  logocontainer('assets/images/vrbo.png'),
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  logocontainer('assets/images/aii.png'),
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  logocontainer('assets/images/trip.png'),
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  logocontainer('assets/images/priceline.png'),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            // Text('data')
+          ],
+        ),
       ),
     );
   }

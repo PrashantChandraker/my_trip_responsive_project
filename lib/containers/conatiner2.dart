@@ -110,7 +110,7 @@ class _Conatiner2State extends State<Conatiner2> {
             child: Row(
               children: [
                 placesContainer(
-                  'images/vilaa1.jpg',
+                  'assets/images/vilaa1.jpg',
                   'Serenity Cove Retreat',
                   'Jakarta',
                   '4.8 (3 465 reviews)',
@@ -125,7 +125,7 @@ class _Conatiner2State extends State<Conatiner2> {
                   width: 10,
                 ),
                 placesContainer(
-                  'images/vila2.jpg',
+                  'assets/images/vila2.jpg',
                   'Azure Paradise Estate',
                   'Los Angeles',
                   '4.8 (3 454 reviews)',
@@ -140,7 +140,7 @@ class _Conatiner2State extends State<Conatiner2> {
                   width: 10,
                 ),
                 placesContainer(
-                  'images/vila3.jpg',
+                  'assets/images/vila3.jpg',
                   'Whispering Palms Paradise',
                   'Bali',
                   '4.7 (345 reviews)',
@@ -155,7 +155,7 @@ class _Conatiner2State extends State<Conatiner2> {
                   width: 10,
                 ),
                 placesContainer(
-                  'images/vila4.jpg',
+                  'assets/images/vila4.jpg',
                   'Tropical Dream Haven',
                   'Krabi',
                   '4.9 (1 776 reviews)',

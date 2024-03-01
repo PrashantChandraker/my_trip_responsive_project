@@ -117,7 +117,7 @@ class _Container4State extends State<Container4> {
                 child: Row(
                   children: [
                      foodContainer(
-                       'images/food1.jpg',
+                       'assets/images/food1.jpg',
                       'Jakarta Food Corner',
                       'Indonesia',
                       '4.8 (3 465 reviews)',
@@ -128,7 +128,7 @@ class _Container4State extends State<Container4> {
                       width: 10,
                     ),
                     foodContainer(
-                      'images/food2.jpg',
+                      'assets/images/food2.jpg',
                       'Sushi symphony soiree',
                       'Japan',
                       '4.8 (3 465 reviews)',
@@ -139,7 +139,7 @@ class _Container4State extends State<Container4> {
                       width: 10,
                     ),
                     foodContainer(
-                      'images/food3.jpg',
+                      'assets/images/food3.jpg',
                       'Egg trailblazers tour',
                       'Mexico',
                       '4.7 (365 reviews)',
@@ -150,7 +150,7 @@ class _Container4State extends State<Container4> {
                       width: 10,
                     ),
                     foodContainer(
-                      'images/food4.jpg',
+                      'assets/images/food4.jpg',
                       'Pasta Bonanza bash',
                       'Italy',
                       '4.9 (1776 reviews)',
@@ -161,7 +161,7 @@ class _Container4State extends State<Container4> {
                       width: 10,
                     ),
                     foodContainer(
-                       'images/food1.jpg',
+                       'assets/images/food1.jpg',
                       'Jakarta Food Corner',
                       'Indonesia',
                       '4.8 (3 465 reviews)',
@@ -172,7 +172,7 @@ class _Container4State extends State<Container4> {
                       width: 10,
                     ),
                     foodContainer(
-                      'images/food2.jpg',
+                      'assets/images/food2.jpg',
                       'Sushi symphony soiree',
                       'Japan',
                       '4.8 (3 465 reviews)',
@@ -183,7 +183,7 @@ class _Container4State extends State<Container4> {
                       width: 10,
                     ),
                     foodContainer(
-                      'images/food3.jpg',
+                      'assets/images/food3.jpg',
                       'Egg trailblazers tour',
                       'Mexico',
                       '4.7 (365 reviews)',
@@ -194,7 +194,7 @@ class _Container4State extends State<Container4> {
                       width: 10,
                     ),
                     foodContainer(
-                      'images/food4.jpg',
+                      'assets/images/food4.jpg',
                       'Pasta Bonanza bash',
                       'Italy',
                       '4.9 (1776 reviews)',
@@ -210,7 +210,7 @@ class _Container4State extends State<Container4> {
                 child: Row(
                   children: [
                      foodContainer(
-                       'images/food5.jpg',
+                       'assets/images/food5.jpg',
                       'Tuscan trattoria tour',
                       'France',
                       '4.8 (3 465 reviews)',
@@ -221,7 +221,7 @@ class _Container4State extends State<Container4> {
                       width: 10,
                     ),
                     foodContainer(
-                       'images/food6.jpg',
+                       'assets/images/food6.jpg',
                       'flavor of florence feast',
                       'France',
                       '4.8 (3 465 reviews)',
@@ -229,7 +229,7 @@ class _Container4State extends State<Container4> {
                       Icons.star_border_purple500_outlined,
                     ),
                     foodContainer(
-                       'images/food7.jpg',
+                       'assets/images/food7.jpg',
                       'king dessert',
                       'Indonesia',
                       '4.8 (3 465 reviews)',
@@ -237,7 +237,7 @@ class _Container4State extends State<Container4> {
                       Icons.star_border_purple500_outlined,
                     ),
                     foodContainer(
-                       'images/food8.jpg',
+                       'assets/images/food8.jpg',
                       'Warnindo n blok',
                       'Indonesia',
                       '4.7 (3 465 reviews)',
@@ -248,7 +248,7 @@ class _Container4State extends State<Container4> {
                       width: 10,
                     ),
                     foodContainer(
-                       'images/food5.jpg',
+                       'assets/images/food5.jpg',
                       'Tuscan trattoria tour',
                       'France',
                       '4.8 (3 465 reviews)',
@@ -259,7 +259,7 @@ class _Container4State extends State<Container4> {
                       width: 10,
                     ),
                     foodContainer(
-                       'images/food6.jpg',
+                       'assets/images/food6.jpg',
                       'flavor of florence feast',
                       'France',
                       '4.8 (3 465 reviews)',
@@ -267,7 +267,7 @@ class _Container4State extends State<Container4> {
                       Icons.star_border_purple500_outlined,
                     ),
                     foodContainer(
-                       'images/food7.jpg',
+                       'assets/images/food7.jpg',
                       'king dessert',
                       'Indonesia',
                       '4.8 (3 465 reviews)',
@@ -275,7 +275,7 @@ class _Container4State extends State<Container4> {
                       Icons.star_border_purple500_outlined,
                     ),
                     foodContainer(
-                       'images/food8.jpg',
+                       'assets/images/food8.jpg',
                       'Warnindo n blok',
                       'Indonesia',
                       '4.7 (3 465 reviews)',

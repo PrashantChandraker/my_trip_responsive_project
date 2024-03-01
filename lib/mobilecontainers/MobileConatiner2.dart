@@ -13,11 +13,11 @@ class _MobileContainer2State extends State<MobileContainer2> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 550,
+      height: 560,
       width: double.infinity,
       decoration: const BoxDecoration(color: Colors.black),
       child: Padding(
-        padding: const EdgeInsets.only(top: 5),
+        padding: const EdgeInsets.only(top: 15),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,

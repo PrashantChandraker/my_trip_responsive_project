@@ -33,7 +33,7 @@ class _Container6State extends State<Container6> {
                       height: w! / 40,
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage('images/mini_logo.png'))),
+                              image: AssetImage('assets/images/mini_logo.png'))),
                     ),
                     Text(
                       'Go Trip',
@@ -193,7 +193,7 @@ class _Container6State extends State<Container6> {
                         height: w! / 40,
                         decoration: const BoxDecoration(
                             image: DecorationImage(
-                                image: AssetImage('images/insta_logo.png'))),
+                                image: AssetImage('assets/images/insta_logo.png'))),
                       ),
                       SizedBox(width: w!/90),
                       //Spacer(flex: 1,),
@@ -202,7 +202,7 @@ class _Container6State extends State<Container6> {
                         height: w! / 40,
                         decoration: const BoxDecoration(
                             image: DecorationImage(
-                                image: AssetImage('images/twitter_logo.png'))),
+                                image: AssetImage('assets/images/twitter_logo.png'))),
                       ),
                       //const Spacer(flex: 1,),
                        SizedBox(width: w!/90),
@@ -211,7 +211,7 @@ class _Container6State extends State<Container6> {
                         height: w! / 40,
                         decoration: const BoxDecoration(
                             image: DecorationImage(
-                                image: AssetImage('images/fb_logo.png'))),
+                                image: AssetImage('assets/images/fb_logo.png'))),
                       ),
                   
                   ],),

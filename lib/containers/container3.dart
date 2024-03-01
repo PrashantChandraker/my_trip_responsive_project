@@ -77,7 +77,7 @@ class _Container3State extends State<Container3> {
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(4),
                           child: Image.asset(
-                            'images/Aeroplane1.jpg',
+                            'assets/images/Aeroplane1.jpg',
                             fit: BoxFit.fill,
                           ),
                         ),
@@ -97,7 +97,7 @@ class _Container3State extends State<Container3> {
                                 decoration: const BoxDecoration(
                                     image: DecorationImage(
                                         image: AssetImage(
-                                            'images/percnt_logo.png'))),
+                                            'assets/images/percnt_logo.png'))),
                               ),
                               const SizedBox(
                                 width: 350,
@@ -159,7 +159,7 @@ class _Container3State extends State<Container3> {
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(4),
                           child: Image.asset(
-                            'images/cardrive.jpg',
+                            'assets/images/cardrive.jpg',
                             fit: BoxFit.fill,
                           ),
                         ),
@@ -179,7 +179,7 @@ class _Container3State extends State<Container3> {
                                 decoration: const BoxDecoration(
                                     image: DecorationImage(
                                         image: AssetImage(
-                                            'images/percnt_logo.png'))),
+                                            'assets/images/percnt_logo.png'))),
                               ),
                               const SizedBox(
                                 width: 350,
